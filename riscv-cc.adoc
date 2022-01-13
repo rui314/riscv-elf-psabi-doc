@@ -153,7 +153,8 @@ to the aligned register pair rule).
 Values are returned in the same manner as a first named argument of the same
 type would be passed.  If such an argument would have been passed by
 reference, the caller allocates memory for the return value, and passes the
-address as an implicit first parameter.
+address as an implicit first parameter, the address is not required hold on
+return register (a0).
 
 The stack grows downwards (towards lower addresses) and the stack pointer shall
 be aligned to a 128-bit boundary upon procedure entry.
